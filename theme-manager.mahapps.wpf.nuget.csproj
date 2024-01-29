@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Theme.Manager.MahApps.WPF</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>5.0.0</Version>
+    <PackageId>Theme.Manager.MahApps.WPF</PackageId>
+    <Company></Company>
+    <Product>Theme.Manager.MahApps.WPF</Product>
+    <Authors>Aleksander Felyugin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>http://10.135.130.163/itis/is/creuc/nuget-galery/nuget-library/theme-manager.mahapps.wpf.nuget</PackageProjectUrl>
+    <RepositoryUrl>http://10.135.130.163/itis/is/creuc/nuget-galery/nuget-library/theme-manager.mahapps.wpf.nuget</RepositoryUrl>
+    <RepositoryType>class library WPF</RepositoryType>
+    <PackageTags>Theme</PackageTags>
+	<Description>
+		"ThemeManager" - это библиотека, предоставляющая сервисы для выбора и установки тем оформления и установки цветовой схемы (акцентного цвета) в приложениях на платформе .NET WPF. Этот пакет содержит интерфейс "IThemeManager" и его реализацию "ThemeManager", которые обеспечивают функциональность инициализации темы оформления, установки выбранной темы и получения текущей темы.
+		Основные компоненты пакета:
+		"IThemeManager": Интерфейс, определяющий контракт для работы с темами оформления и установкой цветовой схемы. Включает методы для инициализации темы, установки выбранной темы и получения текущей темы.
+		"ThemeManager": Реализация интерфейса "IThemeManager", предоставляющая реальную функциональность для работы с темами оформления и цветовыми схемами. Этот сервис позволяет инициализировать темы и получить список доступных цветовых схем, устанавливать выбранную тему и получать текущую тему для применения к приложению.
+		Преимущества "ThemeSelectorLibrary":
+		Простота использования: "ThemeManager" предоставляет простые методы для выбора и установки тем оформления и цветовой схемы, что упрощает процесс настройки интерфейса приложения.
+		Поддержка различных тем: Благодаря использованию библиотеки "ControlzEx.Theming" и "MahApps.Metro.Theming", "ThemeManager" позволяет выбирать и применять разнообразные темы оформления к приложению.
+		Адаптивность: Пакет позволяет выбрать тему оформления и цветовую схему в соответствии с предпочтениями пользователя или синхронизировать тему с режимом высокого контраста для повышения доступности и предоставляет более приятный пользовательский опыт.
+	</Description>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ControlzEx" Version="5.0.2" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+  </ItemGroup>
+
+</Project>
